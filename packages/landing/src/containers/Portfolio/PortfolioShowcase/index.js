@@ -44,7 +44,7 @@ const PortfolioShowcase = ({
     <Box {...sectionWrapper} as="section" id="portfolio_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Making Ideas Come to Life !" />
+          <Heading {...secTitle} content="O Nas" />
           <Text
             {...secDescription}
             content="Year after year, Blue Label Labs has been recognized as one of the top design and development firms in New York City. It’s nice to feel appreciated!"

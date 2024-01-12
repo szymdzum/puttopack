@@ -20,10 +20,10 @@ const ClientsSection = ({
     <Box {...sectionWrapper} as="section">
       <Container noGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="We can build your story." />
+          <Heading {...secTitle} content="Kim Jesteśmy" />
           <Text
             {...secDescription}
-            content="Through the years we have partnered with great companies and entrepreneurs all over the world."
+            content="Put To Pack to Twój zaufany partner w zarządzaniu opakowaniami. Z ponad 10-letnim doświadczeniem w branży oferujemy profesjonalne wsparcie w zakresie rejestracji, raportowania i optymalizacji kosztów opakowań na rynku polski."
           />
         </Box>
         <Box {...row}>

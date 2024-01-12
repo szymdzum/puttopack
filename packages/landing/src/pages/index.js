@@ -24,7 +24,7 @@ const Portfolio = () => {
     <ThemeProvider theme={portfolioTheme}>
       <Fragment>
         <Head>
-          <title>Portfolio | A react next landing page</title>
+          <title>Puttopack</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#ec5555" />
           {/* Load google fonts */}
@@ -44,13 +44,15 @@ const Portfolio = () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <PortfolioShowcase />
-          <AwardsSection />
+          {/* <PortfolioShowcase /> */}
+          <ClientsSection />
           <ProcessSection />
-          <SkillSection />
+          {/* <AwardsSection />
+           */}
+          {/* <SkillSection />
           <CallToAction />
           <TestimonialSection />
-          <ClientsSection />
+           */}
           <ContactSection />
           <Footer />
         </ContentWrapper>

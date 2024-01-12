@@ -9,7 +9,7 @@ import Box from 'common/components/Box';
 import HamburgMenu from 'common/components/HamburgMenu';
 import Container from 'common/components/UI/Container';
 import { DrawerContext } from 'common/contexts/DrawerContext';
-
+import Heading from 'common/components/Heading';
 import { MENU_ITEMS } from 'common/data/Portfolio/data';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
@@ -30,6 +30,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     <NavbarWrapper {...navbarStyle} className="portfolio_navbar">
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
+
           <Logo
             href="#"
             logoSrc={LogoImage}
@@ -44,15 +45,16 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             logoStyle={logoStyle}
             className="logo-alt"
           />
+  
           <Box {...menuWrapper}>
             <ScrollSpyMenu
               className="main_menu"
               menuItems={MENU_ITEMS}
               offset={-70}
-            />
-            <Link href="#" className="navbar_button">
-              <Button {...button} title="LET'S TALK" />
-            </Link>
+            /> 
+            {/* <Link href="#" className="navbar_button">
+              <Button {...button} title="KONTAKT" />
+            </Link> */}
             <Drawer
               width="420px"
               placement="right"

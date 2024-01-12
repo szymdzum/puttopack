@@ -61,22 +61,17 @@ export const SOCIAL_PROFILES = [
 
 export const MENU_ITEMS = [
   {
-    label: 'ME',
-    path: '#banner_section',
-    offset: '0',
-  },
-  {
-    label: 'PROJECT',
+    label: 'O MNIE',
     path: '#portfolio_section',
     offset: '0',
   },
   {
-    label: 'AWARDS',
+    label: 'OFERTA',
     path: '#awards_section',
     offset: '0',
   },
   {
-    label: 'WHY ME?',
+    label: 'KONTAKT',
     path: '#process_section',
     offset: '0',
   },
@@ -378,21 +373,21 @@ export const PORTFOLIO_SHOWCASE = [
 export const PROCESS_STEPS = [
   {
     image: Step1,
-    title: '1. Research',
+    title: 'Bezpieczeństwo',
     description:
-      'We work with you to understand user’s stories and validate your idea with real users using lean design sprints.',
+      'Zminimalizuj ryzyko kar i zapewnij zgodność z przepisami.',
   },
   {
     image: Step2,
-    title: '2. Design',
+    title: 'Wygoda',
     description:
-      'Expanding on the insights gained, you’ll work closely with our design team to create an elegant design',
+      'Prowadzimy Cię przez rejestrację i raportowanie.',
   },
   {
     image: Step3,
-    title: '3. Build',
+    title: 'Oszczędność',
     description:
-      'With our scrum-based agile methodology, you’ll receive iterative builds every two weeks, which gives you ',
+      'Optymalizujemy Twoje koszty związane z opakowaniami.',
   },
 ];
 

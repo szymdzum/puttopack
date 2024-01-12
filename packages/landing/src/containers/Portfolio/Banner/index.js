@@ -11,7 +11,7 @@ import BannerWrapper from './banner.style';
 
 import { SOCIAL_PROFILES } from 'common/data/Portfolio/data';
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight';
-import PersonImage from 'common/assets/image/portfolio/person.png';
+import PersonImage from 'common/assets/image/portfolio/banner.png';
 
 const BannerSection = ({
   row,
@@ -29,19 +29,19 @@ const BannerSection = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...contentArea}>
-            <Heading content="Hello, I’m" {...greetingStyle} />
-            <Heading content="Jon Doe" {...nameStyle} />
-            <Heading content="Visual System Designer" {...designationStyle} />
+            <Heading content="Kompleksowa obsługa Twoich Opakowań" {...greetingStyle} />
+            <Heading content="Puttopack" {...nameStyle} />
+            <Heading content="Lorem ipsum dolor sit amet, test PL znaków ą, ć, ę, ł, ń, ó, ś, ź, ż oraz ł. " {...designationStyle} />
             <Box {...roleWrapper}>
               <Icon
                 icon={cornerDownRight}
                 style={{ color: '#3444f1' }}
                 size={22}
               />
-              <Heading content="Illustrative Lead at RedQ" {...roleStyle} />
+              <Heading content="Test PL znaków ą, ć, ę, ł, ń, ó, ś, ź, ż oraz ł. " {...roleStyle} />
             </Box>
             <Text
-              content="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Lorem Ipsum is simply dummy text of the printing."
+              content="Wypełniam wymagania prawne dotyczące wprowadzania produktów na rynek, które dotyczą firm sprzedających produkty w opakowaniach ozdobionych własnym logo."
               {...aboutStyle}
             />
             <SocialProfile items={SOCIAL_PROFILES} />

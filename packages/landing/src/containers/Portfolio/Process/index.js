@@ -43,11 +43,11 @@ const ProcessSection = ({
         <Box {...secTitleWrapper}>
           <Heading
             {...secTitle}
-            content="From Lean Design Sprints to Agile Development"
+            content="Nasze Usługi"
           />
           <Text
             {...secDescription}
-            content="Our process is designed to give you the best shot at success."
+            content="Zrób coś fajnego ze swoimi pudłami"
           />
         </Box>
 
@@ -71,7 +71,7 @@ const ProcessSection = ({
           ))}
         </Box>
 
-        <Box {...learningRow}>
+        {/* <Box {...learningRow}>
           <Box {...learningContentArea}>
             <Heading
               content="Which is why we Never Stop Learning."
@@ -113,7 +113,7 @@ const ProcessSection = ({
               </Box>
             ))}
           </Box>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   );
