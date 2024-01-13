@@ -44,14 +44,13 @@ const Portfolio = () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          {/* <PortfolioShowcase /> */}
           <ClientsSection />
           <ProcessSection />
           {/* <AwardsSection />
-           */}
           {/* <SkillSection />
           <CallToAction />
           <TestimonialSection />
+          <PortfolioShowcase /> 
            */}
           <ContactSection />
           <Footer />

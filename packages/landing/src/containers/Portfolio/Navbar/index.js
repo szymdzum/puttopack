@@ -30,7 +30,6 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     <NavbarWrapper {...navbarStyle} className="portfolio_navbar">
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
-
           <Logo
             href="#"
             logoSrc={LogoImage}
@@ -45,7 +44,6 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             logoStyle={logoStyle}
             className="logo-alt"
           />
-  
           <Box {...menuWrapper}>
             <ScrollSpyMenu
               className="main_menu"
