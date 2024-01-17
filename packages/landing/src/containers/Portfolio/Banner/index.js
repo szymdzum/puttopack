@@ -11,7 +11,7 @@ import BannerWrapper from './banner.style';
 
 import { SOCIAL_PROFILES } from 'common/data/Portfolio/data';
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight';
-import PersonImage from 'common/assets/image/portfolio/banner.png';
+import LeafletImage from 'common/assets/image/portfolio/leaflet.png';
 
 const BannerSection = ({
   row,
@@ -29,25 +29,25 @@ const BannerSection = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...contentArea}>
-            <Heading content="Kompleksowa obsługa Twoich Opakowań" {...greetingStyle} />
-            <Heading content="Puttopack" {...nameStyle} />
-            <Heading content="Lorem ipsum dolor sit amet, test PL znaków ą, ć, ę, ł, ń, ó, ś, ź, ż oraz ł. " {...designationStyle} />
+            <Heading content=" " {...greetingStyle} />
+            <Heading content="PutToPack" {...nameStyle} />
+            <Heading content="" {...designationStyle} />
             <Box {...roleWrapper}>
               <Icon
                 icon={cornerDownRight}
-                style={{ color: '#3444f1' }}
+                style={{ color: '#85b946' }}
                 size={22}
               />
-              <Heading content="Test PL znaków ą, ć, ę, ł, ń, ó, ś, ź, ż oraz ł. " {...roleStyle} />
+              <Heading content="Wypełniam wymagania prawne dotyczące wprowadzania produktów na rynek, które dotyczą firm sprzedających produkty w opakowaniach ozdobionych własnym logo. " {...roleStyle} />
             </Box>
             <Text
-              content="Wypełniam wymagania prawne dotyczące wprowadzania produktów na rynek, które dotyczą firm sprzedających produkty w opakowaniach ozdobionych własnym logo."
+              content=" "
               {...aboutStyle}
             />
-            <SocialProfile items={SOCIAL_PROFILES} />
+            {/* <SocialProfile items={SOCIAL_PROFILES} /> */}
           </Box>
           <Box {...imageArea} className="image_area">
-            <NextImage src={PersonImage} alt="Mat Helme" />
+            <NextImage src={LeafletImage} alt="leaflet" />
           </Box>
         </Box>
       </Container>
@@ -88,21 +88,21 @@ BannerSection.defaultProps = {
   },
   greetingStyle: {
     as: 'h3',
-    color: '#fff',
+    color: '#000000',
     fontSize: ['18px', '18px', '18px', '20px', '30px'],
     fontWeight: '500',
     mb: '8px',
   },
   nameStyle: {
     as: 'h2',
-    color: '#fff',
+    color: '#000000',
     fontSize: ['38px', '38px', '44px', '60px', '80px'],
     fontWeight: '800',
     mb: '6px',
   },
   designationStyle: {
     as: 'h3',
-    color: '#fff',
+    color: '#000000',
     fontSize: ['18px', '18px', '18px', '20px', '30px'],
     fontWeight: '700',
     mb: ['30px', '30px', '25px', '30px', '30px'],
@@ -115,14 +115,14 @@ BannerSection.defaultProps = {
     as: 'h4',
     fontSize: ['18px', '18px', '18px', '18px', '20px'],
     fontWeight: '500',
-    color: '#fff',
+    color: '#000000',
     mb: '0',
     ml: '10px',
   },
   aboutStyle: {
     fontSize: ['15px', '15px', '15px', '16px', '16px'],
     fontWeight: '400',
-    color: '#fff',
+    color: '#',
     lineHeight: '1.5',
     mb: '50px',
   },

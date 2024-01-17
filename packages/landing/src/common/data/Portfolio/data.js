@@ -62,17 +62,17 @@ export const SOCIAL_PROFILES = [
 export const MENU_ITEMS = [
   {
     label: 'O MNIE',
-    path: '#banner_section',
+    path: '#about_section',
     offset: '0',
   },
   {
     label: 'OFERTA',
-    path: '#process_section',
+    path: '#offer_section',
     offset: '0',
   },
   {
     label: 'KONTAKT',
-    path: '#process_section',
+    path: '#contact_section',
     offset: '0',
   },
 ];

@@ -13,7 +13,7 @@ import Heading from 'common/components/Heading';
 import { MENU_ITEMS } from 'common/data/Portfolio/data';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
-import LogoImage from 'common/assets/image/portfolio/logo.png';
+import LogoImage from 'common/assets/image/portfolio/logo-box.png';
 import LogoImageAlt from 'common/assets/image/portfolio/logo-alt.png';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
@@ -56,7 +56,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             <Drawer
               width="420px"
               placement="right"
-              drawerHandler={<HamburgMenu barColor="#3444f1" />}
+              drawerHandler={<HamburgMenu barColor="#85b946" />}
               open={state.isOpen}
               toggleHandler={toggleHandler}
             >
@@ -66,9 +66,9 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
-              <Link href="#" className="navbar_drawer_button">
+              {/* <Link href="#" className="navbar_drawer_button">
                 <Button {...button} title="LET'S TALK" />
-              </Link>
+              </Link> */}
             </Drawer>
           </Box>
         </Box>

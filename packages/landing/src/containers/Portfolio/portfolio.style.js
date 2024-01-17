@@ -71,7 +71,7 @@ export const GlobalStyle = createGlobalStyle`
               position: absolute;
               width: calc(100% - 8px);
               height: 11px;
-              background: #c2c7fb;
+              background: #85b946;
               bottom: 2px;
               left: -4px;
               z-index: -1;
@@ -115,7 +115,7 @@ export const GlobalStyle = createGlobalStyle`
         content: '\f10b';
         font-family: Flaticon;
         font-size: 26px;
-        color: #3444f1;
+        color: #85b946;
         transform: rotate(45deg);
         display: block;
       }
@@ -151,7 +151,7 @@ export const ContentWrapper = styled.div`
     transition: 0.2s ease-in-out;
     &:before {
       content: '';
-      background-color: ${themeGet('colors.primary', '#3444f1')};
+      background-color: ${themeGet('colors.primary', '#85b946')};
       position: absolute;
       width: calc(100% + 4px);
       height: calc(100% + 4px);
@@ -199,7 +199,7 @@ export const ContentWrapper = styled.div`
         }
         &.is-current {
           a {
-            color: #fff;
+            color: #000;
             &:after {
               transform: scaleX(1);
               transform-origin: left center 0;
@@ -211,12 +211,12 @@ export const ContentWrapper = styled.div`
           padding: 5px;
           font-size: 16px;
           font-weight: 700;
-          color: #fff;
+          color: #000;
           position: relative;
           font-family: 'Raleway', sans-serif;
           transition: 0.15s ease-in-out;
           &:hover {
-            color: #fff;
+            color: #000;
             &:after {
               transform: scaleX(1);
               transform-origin: left center 0;
@@ -228,7 +228,7 @@ export const ContentWrapper = styled.div`
             position: absolute;
             width: calc(100% - 8px);
             height: 11px;
-            background: #3444f1;
+            background: #85b946;
             bottom: 6px;
             left: 0;
             z-index: -1;
@@ -269,7 +269,7 @@ export const ContentWrapper = styled.div`
           a {
             color: #302b4e;
             &:after {
-              background: #c2c7fb;
+              background: #85b946;
             }
           }
         }
@@ -318,7 +318,7 @@ export const PrevButton = styled.div`
   cursor: pointer;
   &:hover {
     span {
-      background: #3444f1;
+      background: #85b946;
       @media (min-width: 991px) {
         width: 100px;
       }

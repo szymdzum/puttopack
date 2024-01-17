@@ -38,7 +38,7 @@ const ProcessSection = ({
   listTitle,
 }) => {
   return (
-    <Box {...sectionWrapper} as="section" id="process_section">
+    <Box {...sectionWrapper} as="offer_section" id="offer_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
           <Heading

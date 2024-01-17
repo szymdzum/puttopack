@@ -17,7 +17,7 @@ const ClientsSection = ({
   row,
 }) => {
   return (
-    <Box {...sectionWrapper} as="section">
+    <Box {...sectionWrapper} id="about_section" as="about_section" >
       <Container noGutter width="1200px">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Kim Jesteśmy" />
