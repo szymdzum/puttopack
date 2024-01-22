@@ -7,9 +7,9 @@ import Image from 'common/components/Image';
 import Container from 'common/components/UI/Container';
 
 import { CLIENTS } from 'common/data/Portfolio/data';
-import { ClientsImage } from './clients.style';
+import { AboutImage } from './clients.style';
 
-const ClientsSection = ({
+const AboutSection = ({
   sectionWrapper,
   secTitleWrapper,
   secTitle,
@@ -17,7 +17,7 @@ const ClientsSection = ({
   row,
 }) => {
   return (
-    <Box {...sectionWrapper} id="about_section" as="about_section" >
+    <Box {...sectionWrapper} id="about_section" as="section" >
       <Container noGutter width="1200px">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Kim Jesteśmy" />
@@ -28,13 +28,13 @@ const ClientsSection = ({
         </Box>
         <Box {...row}>
           {CLIENTS.map((item, index) => (
-            <ClientsImage key={`client-${index}`}>
+            <AboutImage key={`client-${index}`}>
               <Image
                 src={item.image?.src}
                 alt={item.title}
                 title={item.title}
               />
-            </ClientsImage>
+            </AboutImage>
           ))}
         </Box>
       </Container>
@@ -42,7 +42,7 @@ const ClientsSection = ({
   );
 };
 
-ClientsSection.propTypes = {
+AboutSection.propTypes = {
   sectionWrapper: PropTypes.object,
   secTitleWrapper: PropTypes.object,
   secTitle: PropTypes.object,
@@ -50,7 +50,7 @@ ClientsSection.propTypes = {
   row: PropTypes.object,
 };
 
-ClientsSection.defaultProps = {
+AboutSection.defaultProps = {
   sectionWrapper: {
     pt: ['40px', '60px', '80px', '80px', '80px'],
     pb: ['60px', '80px', '100px', '130px', '130px'],
@@ -82,4 +82,4 @@ ClientsSection.defaultProps = {
   },
 };
 
-export default ClientsSection;
+export default AboutSection;

@@ -15,7 +15,7 @@ import ProcessSection from 'containers/Portfolio/Process';
 import SkillSection from 'containers/Portfolio/Skill';
 import CallToAction from 'containers/Portfolio/CallToAction';
 import TestimonialSection from 'containers/Portfolio/Testimonial';
-import ClientsSection from 'containers/Portfolio/Clients';
+import AboutSection from 'containers/Portfolio/About';
 import ContactSection from 'containers/Portfolio/Contact';
 import Footer from 'containers/Portfolio/Footer';
 
@@ -44,7 +44,7 @@ const Portfolio = () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <ClientsSection />
+          <AboutSection />
           <ProcessSection />
           {/* <AwardsSection />
           {/* <SkillSection />

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const BannerWrapper = styled.section`
   position: relative;
-  background-color: #f2ebda;
   color: #0B0B0C;
   display: flex;
   align-items: center;

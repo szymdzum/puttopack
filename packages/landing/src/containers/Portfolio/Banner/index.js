@@ -6,10 +6,8 @@ import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
 import Container from 'common/components/UI/Container';
-import SocialProfile from '../SocialProfile';
 import BannerWrapper from './banner.style';
 
-import { SOCIAL_PROFILES } from 'common/data/Portfolio/data';
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight';
 import LeafletImage from 'common/assets/image/portfolio/leaflet.png';
 
@@ -44,7 +42,6 @@ const BannerSection = ({
               content=" "
               {...aboutStyle}
             />
-            {/* <SocialProfile items={SOCIAL_PROFILES} /> */}
           </Box>
           <Box {...imageArea} className="image_area">
             <NextImage src={LeafletImage} alt="leaflet" />

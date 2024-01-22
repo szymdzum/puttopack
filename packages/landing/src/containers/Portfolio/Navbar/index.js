@@ -1,15 +1,12 @@
 import React, { useContext } from 'react';
-import Link from 'next/link';
 import PropTypes from 'prop-types';
 import NavbarWrapper from 'common/components/Navbar';
 import Drawer from 'common/components/Drawer';
-import Button from 'common/components/Button';
 import Logo from 'common/components/UIElements/Logo';
 import Box from 'common/components/Box';
 import HamburgMenu from 'common/components/HamburgMenu';
 import Container from 'common/components/UI/Container';
 import { DrawerContext } from 'common/contexts/DrawerContext';
-import Heading from 'common/components/Heading';
 import { MENU_ITEMS } from 'common/data/Portfolio/data';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
@@ -50,9 +47,6 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               menuItems={MENU_ITEMS}
               offset={-70}
             /> 
-            {/* <Link href="#" className="navbar_button">
-              <Button {...button} title="KONTAKT" />
-            </Link> */}
             <Drawer
               width="420px"
               placement="right"
@@ -66,9 +60,6 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
-              {/* <Link href="#" className="navbar_drawer_button">
-                <Button {...button} title="LET'S TALK" />
-              </Link> */}
             </Drawer>
           </Box>
         </Box>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ClientsImage = styled.div`
+export const AboutImage = styled.div`
   position: relative;
   padding: 20px 28px;
   flex-shrink: 0;
