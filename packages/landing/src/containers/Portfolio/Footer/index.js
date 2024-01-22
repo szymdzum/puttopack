@@ -38,29 +38,9 @@ const Footer = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...col}>
-            <Heading
-              as="h3"
-              content="So, do we work together?"
-              {...titleStyle}
-            />
-            <Link href="#">
-              <Heading as="h3" content="LET'S TALK!" {...linkStyle} />
-            </Link>
+
           </Box>
-          <Box {...col}>
-            <Heading as="h3" content="A treat for your inbox" {...titleStyle} />
-            <Newsletter>
-              <Input
-                inputType="email"
-                placeholder="Email address"
-                iconPosition="right"
-                isMaterial={false}
-                className="email_input"
-                aria-label="email"
-              />
-              <Button {...newsletterButton} title="Subscribe" />
-            </Newsletter>
-          </Box>
+
         </Box>
 
         <Box {...row}>
@@ -81,14 +61,7 @@ const Footer = ({
             </Link>
           </Box>
           <Box {...col} {...flexBox}>
-            <Box {...contactItem}>
-              <Text content="Need help?" {...contactTitle} />
-              <Text content="redq.io" {...contactInfo} />
-            </Box>
-            <Box {...contactItem}>
-              <Text content="Feel like talking" {...contactTitle} />
-              <Text content="+479-443-9334" {...contactInfo} />
-            </Box>
+
           </Box>
         </Box>
 

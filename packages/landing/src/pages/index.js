@@ -7,14 +7,9 @@ import { portfolioTheme } from 'common/theme/portfolio';
 import ResetCSS from 'common/assets/css/style';
 import { GlobalStyle, ContentWrapper } from 'containers/Portfolio/portfolio.style';
 
-import BannerSection from 'containers/Portfolio/Banner';
 import Navbar from 'containers/Portfolio/Navbar';
-import AwardsSection from 'containers/Portfolio/Awards';
-import PortfolioShowcase from 'containers/Portfolio/PortfolioShowcase';
-import ProcessSection from 'containers/Portfolio/Process';
-import SkillSection from 'containers/Portfolio/Skill';
-import CallToAction from 'containers/Portfolio/CallToAction';
-import TestimonialSection from 'containers/Portfolio/Testimonial';
+import BannerSection from 'containers/Portfolio/Banner';
+import OfferSection from 'containers/Portfolio/Offer';
 import AboutSection from 'containers/Portfolio/About';
 import ContactSection from 'containers/Portfolio/Contact';
 import Footer from 'containers/Portfolio/Footer';
@@ -45,13 +40,7 @@ const Portfolio = () => {
           </Sticky>
           <BannerSection />
           <AboutSection />
-          <ProcessSection />
-          {/* <AwardsSection />
-          {/* <SkillSection />
-          <CallToAction />
-          <TestimonialSection />
-          <PortfolioShowcase /> 
-           */}
+          <OfferSection />
           <ContactSection />
           <Footer />
         </ContentWrapper>

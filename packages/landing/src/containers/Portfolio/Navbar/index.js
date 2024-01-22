@@ -13,7 +13,7 @@ import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 import LogoImage from 'common/assets/image/portfolio/logo-box.png';
 import LogoImageAlt from 'common/assets/image/portfolio/logo-alt.png';
 
-const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
+const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
 
   // Toggle drawer
