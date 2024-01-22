@@ -1,19 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from 'react-icons-kit';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
-import Button from 'common/components/Button';
 import Container from 'common/components/UI/Container';
-import { plus } from 'react-icons-kit/feather/plus';
-
-import { ButtonWrapper } from '../../Portfolio/portfolio.style';
 import ProcessItem from './process.style';
-import { PROCESS_STEPS, SERVICE_LIST } from 'common/data/Portfolio/data';
+import { PROCESS_STEPS } from 'common/data/Portfolio/data';
 
-const ProcessSection = ({
+const OfferSection = ({
   sectionWrapper,
   secTitleWrapper,
   secTitle,
@@ -23,19 +18,6 @@ const ProcessSection = ({
   processImageStyle,
   processTitleStyle,
   processDescriptionStyle,
-  learningRow,
-  learningContentArea,
-  learningListArea,
-  learningTitle,
-  learningSubTitle,
-  learningDescription,
-  buttonWrapper,
-  buttonLabelStyle,
-  buttonStyle,
-  learningList,
-  listItem,
-  listText,
-  listTitle,
 }) => {
   return (
     <Box {...sectionWrapper} as="section" id="offer_section">
@@ -43,7 +25,7 @@ const ProcessSection = ({
         <Box {...secTitleWrapper}>
           <Heading
             {...secTitle}
-            content="Nasze Usługi"
+            content="Oferta"
           />
           <Text
             {...secDescription}
@@ -70,56 +52,12 @@ const ProcessSection = ({
             </Box>
           ))}
         </Box>
-
-        {/* <Box {...learningRow}>
-          <Box {...learningContentArea}>
-            <Heading
-              content="Which is why we Never Stop Learning."
-              {...learningTitle}
-            />
-            <Text
-              content="We believe that we succeed when our clients succeed."
-              {...learningSubTitle}
-            />
-            <Text
-              {...learningDescription}
-              content="I’m Tom Parkes, a New Zealand born digital designer currently looking for opportunities in Canada. Over the 8 years of my career, my portfolio includes user interface design, brand & identity design, illustration, and art & creative direction."
-            />
-            <Text
-              {...learningDescription}
-              content="While at Neverbland over the last few years, I've worked on web and product solutions for a range of startups, in a variety of industries."
-            />
-            <Box {...buttonWrapper}>
-              <Text content="Start Your Project ?" {...buttonLabelStyle} />
-              <ButtonWrapper>
-                <Button
-                  title="hello@redq.io"
-                  className="portfolio_button"
-                  {...buttonStyle}
-                />
-              </ButtonWrapper>
-            </Box>
-          </Box>
-          <Box {...learningListArea}>
-            {SERVICE_LIST.map((serviceList, index) => (
-              <Box {...learningList} key={`serviceList-${index}`}>
-                <Heading content={serviceList.title} {...listTitle} />
-                {serviceList.listItems.map((item, index) => (
-                  <Box {...listItem} key={`list-item-${index}`}>
-                    <Icon icon={item.icon || plus} size={item.iconSize || 12} />
-                    <Text as="span" content={item.content} {...listText} />
-                  </Box>
-                ))}
-              </Box>
-            ))}
-          </Box>
-        </Box> */}
       </Container>
     </Box>
   );
 };
 
-ProcessSection.propTypes = {
+OfferSection.propTypes = {
   sectionWrapper: PropTypes.object,
   secTitleWrapper: PropTypes.object,
   secTitle: PropTypes.object,
@@ -144,7 +82,7 @@ ProcessSection.propTypes = {
   listTitle: PropTypes.object,
 };
 
-ProcessSection.defaultProps = {
+OfferSection.defaultProps = {
   sectionWrapper: {
     pt: ['60px', '80px', '90px', '100px', '140px'],
     pb: ['10px', '40px', '30px', '50px', '50px'],
@@ -285,4 +223,4 @@ ProcessSection.defaultProps = {
   },
 };
 
-export default ProcessSection;
+export default OfferSection;

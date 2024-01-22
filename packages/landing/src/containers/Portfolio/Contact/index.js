@@ -3,21 +3,17 @@ import PropTypes from 'prop-types';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
-import Image from 'common/components/Image';
 import Button from 'common/components/Button';
 import Container from 'common/components/UI/Container';
 
 import { ButtonWrapper } from '../../Portfolio/portfolio.style';
-import { ActiveStatus } from './contact.style';
-import Author from 'common/assets/image/portfolio/avatar.png';
 
 const ContactSection = ({
   sectionWrapper,
   secTitleWrapper,
   secTitle,
   secDescription,
-  replyWrapper,
-  replyTime,
+
   buttonStyle,
   buttonWrapper,
 }) => {
@@ -25,20 +21,10 @@ const ContactSection = ({
     <Box {...sectionWrapper} as="section" id="contact_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Let’s Work Together" />
+          <Heading {...secTitle} content="Kontakt" />
           <Text
             {...secDescription}
-            content="If you have a website or mobile app idea in mind or you need some advice about product design, feel free to contact me. Currently my time books quickly, so the sooner you write, the better it is for both of us."
-          />
-        </Box>
-        <Box {...replyWrapper}>
-          <ActiveStatus>
-            <Image src={Author?.src} alt="Author Avatar" />
-          </ActiveStatus>
-          <Heading
-            as="h4"
-            content="Reply time: within 1-2 working days"
-            {...replyTime}
+            content="Lorem Ipsum"
           />
         </Box>
         <Box {...buttonWrapper}>

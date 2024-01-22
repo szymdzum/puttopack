@@ -20,7 +20,7 @@ const AboutSection = ({
     <Box {...sectionWrapper} id="about_section" as="section" >
       <Container noGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Kim Jesteśmy" />
+          <Heading {...secTitle} content="O mnie" />
           <Text
             {...secDescription}
             content="Put To Pack to Twój zaufany partner w zarządzaniu opakowaniami. Z ponad 10-letnim doświadczeniem w branży oferujemy profesjonalne wsparcie w zakresie rejestracji, raportowania i optymalizacji kosztów opakowań na rynku polski."
