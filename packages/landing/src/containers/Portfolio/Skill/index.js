@@ -16,7 +16,7 @@ import {
   ProgressBar,
   SkillIcon,
   SkillAbout,
-} from './skill.style';
+} from '../Offer/skill.style';
 import { SKILLS } from 'common/data/Portfolio/data';
 import { ic_thumb_up } from 'react-icons-kit/md/ic_thumb_up';
 
@@ -33,13 +33,13 @@ const SkillSection = ({
   successRateText,
 }) => {
   return (
-    <Box {...sectionWrapper} as="section">
+    <Box {...sectionWrapper} as="section" id="offer_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Ways I can help you" />
+          <Heading {...secTitle} content="Oferta" />
           <Text
             {...secDescription}
-            content="Have a look, some could be interesting to help you achieve your business goals or start that project you always wanted to do... Yes, that one!"
+            content="To co mogę dla Ciebie zrobić"
           />
         </Box>
 
