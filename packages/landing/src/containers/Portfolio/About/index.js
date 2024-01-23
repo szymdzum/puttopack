@@ -3,11 +3,8 @@ import PropTypes from 'prop-types';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
-import Image from 'common/components/Image';
 import Container from 'common/components/UI/Container';
 
-import { CLIENTS } from 'common/data/Portfolio/data';
-import { AboutImage } from './clients.style';
 
 const AboutSection = ({
   sectionWrapper,
@@ -23,19 +20,22 @@ const AboutSection = ({
           <Heading {...secTitle} content="O mnie" />
           <Text
             {...secDescription}
-            content="Put To Pack to Twój zaufany partner w zarządzaniu opakowaniami. Z ponad 10-letnim doświadczeniem w branży oferujemy profesjonalne wsparcie w zakresie rejestracji, raportowania i optymalizacji kosztów opakowań na rynku polski."
+            content="Cześć, jestem Zuza. Pomagam zidentyfikować problemy polskich i zagranicznych przedsiębiorców
+            prowadzących działalność na terenie naszego kraju."
+            />
+            <Text
+            {...secDescription}
+            content="Od czasów skończenia studiów na politechnice warszawskiej na kierunku ochrony środowiska zajmuję się
+            obowiązkami środowiskowymi firm w Polsce.
+            Czy sprzedajesz w swojej firmie produkty w opakowaniach szklanych? A może z tworzyw sztucznych?
+            Przygotowujesz je do wysyłki w pudełkach z tektury wraz z wypełniaczami lub wykonuje to za Ciebie
+            zewnętrzny podmiot? Jeśli na któreś z pytań odpowiedzia-łąś/łeś TAK to znaczy, że obowiązek
+            sprawozdawania ilości wprowadzonych produktów w opakowaniach dotyczy Ciebie.
+            Jeśli chcesz wiedzieć czy Twoja firma posiada obowiązek z tytułu"
           />
         </Box>
         <Box {...row}>
-          {CLIENTS.map((item, index) => (
-            <AboutImage key={`client-${index}`}>
-              <Image
-                src={item.image?.src}
-                alt={item.title}
-                title={item.title}
-              />
-            </AboutImage>
-          ))}
+          
         </Box>
       </Container>
     </Box>

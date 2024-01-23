@@ -465,30 +465,30 @@ export const SERVICE_LIST = [
 
 export const SKILLS = [
   {
-    title: 'Graphic Design',
+    title: 'Wesprzeć',
     description:
-      'Aristotle maintained the sharp distinction between science and the practical',
+      ' w identyfikacji swoich obowiązków z tytułu wprowadzania opakowań produktów w opakowaniach, sprzętu elektrycznego i elektronicznego, baterii i akumulatorów',
     icon: SkillIcon1,
     successRate: '90',
   },
   {
-    title: 'UI/UX Design',
+    title: 'Pomóc',
     description:
-      'Aristotle maintained the sharp distinction between science and the practical',
+      'Pomóc w rejestracji w bazie danych o produktach i opakowaniach oraz o gospodarce odpadami, czyli BDO',
     icon: SkillIcon2,
     successRate: '85',
   },
   {
-    title: 'Web Application',
+    title: 'Przejąć',
     description:
-      'Aristotle maintained the sharp distinction between science and the practical',
+      'coroczną sprawozdawczości z tytuły wprowadzania na rynek do urzędów',
     icon: SkillIcon3,
     successRate: '80',
   },
   {
-    title: 'Mobile Application',
+    title: 'Obniżyć',
     description:
-      'Aristotle maintained the sharp distinction between science and the practical',
+      'koszty związane z wprowadzaniem opakowań, sprzętu czy baterii',
     icon: SkillIcon4,
     successRate: '70',
   },
