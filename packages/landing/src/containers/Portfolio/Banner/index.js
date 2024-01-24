@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from 'common/components/Box';
-import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
 import Container from 'common/components/UI/Container';
@@ -15,24 +14,15 @@ const BannerSection = ({
   imageArea,
   greetingStyle,
   nameStyle,
-  designationStyle,
-  aboutStyle,
   roleStyle,
-  roleWrapper,
 }) => {
   return (
     <BannerWrapper id="banner_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
-        <Box {...contentArea}>
-        <Heading content="Twój Partner w Ekologicznej Odpowiedzialności" {...greetingStyle} />
+          <Box {...contentArea}>
             <Heading content="Put To Pack" {...nameStyle} />
-            <Heading content=" " {...designationStyle} />
-              <Heading content="Zminimalizuj obciążenia środowiskowe swojej firmy i zachowaj zgodność z przepisami. " {...roleStyle} />
-            <Text
-              content=" "
-              {...aboutStyle}
-            />
+            <Heading content="Twój Partner w Ekologicznej Odpowiedzialności" {...greetingStyle} />
           </Box>
           <Box {...imageArea} className="image_area">
             <NextImage src={LeafletImage} alt="leaflet" />
@@ -82,38 +72,12 @@ BannerSection.defaultProps = {
     mb: '8px',
   },
   nameStyle: {
-    as: 'h2',
+    as: 'h1',
     color: '#000000',
     fontSize: ['38px', '38px', '44px', '60px', '80px'],
     fontWeight: '800',
     mb: '6px',
-  },
-  designationStyle: {
-    as: 'h3',
-    color: '#000000',
-    fontSize: ['18px', '18px', '18px', '20px', '30px'],
-    fontWeight: '700',
-    mb: ['30px', '30px', '25px', '30px', '30px'],
-  },
-  roleWrapper: {
-    flexBox: true,
-    mb: '28px',
-  },
-  roleStyle: {
-    as: 'h4',
-    fontSize: ['18px', '18px', '18px', '18px', '20px'],
-    fontWeight: '500',
-    color: '#000000',
-    mb: '0',
-    ml: '10px',
-  },
-  aboutStyle: {
-    fontSize: ['15px', '15px', '15px', '16px', '16px'],
-    fontWeight: '400',
-    color: '#',
-    lineHeight: '1.5',
-    mb: '50px',
-  },
+  }
 };
 
 export default BannerSection;
