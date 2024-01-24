@@ -18,6 +18,7 @@ const AboutSection = ({
   processTitleStyle,
   processDescriptionStyle,
   learningRow,
+  secTitleWrapper,
   learningContentArea,
   learningSubTitle,
   learningDescription,
@@ -46,7 +47,9 @@ const AboutSection = ({
         </Box>
 
         <Box {...sectionWrapper}>
-          <Heading content="Specjalizuję się w raportowaniu:" {...secTitle} />
+          <Box {...secTitleWrapper}>
+            <Heading {...secTitle} content="Specjalizuję się w raportowaniu" />
+          </Box>
 
           <Box {...processRow}>
             {PROCESS_STEPS.map((item, index) => (
@@ -84,6 +87,7 @@ AboutSection.propTypes = {
   processImageStyle: PropTypes.object,
   processTitleStyle: PropTypes.object,
   processDescriptionStyle: PropTypes.object,
+  secTitleWrapper: PropTypes.object,
   learningRow: PropTypes.object,
   learningContentArea: PropTypes.object,
   learningSubTitle: PropTypes.object,
@@ -145,6 +149,12 @@ AboutSection.defaultProps = {
     color: '#43414e',
     textAlign: 'center',
     lineHeight: '1.5',
+  },
+  secTitleWrapper: {
+    mb: ['60px', '105px'],
+    width: ['100%', '100%', '100%', '100%', '100%'],
+    mb: ['50px', '65px'],
+    textAlign: 'left',
   },
   learningRow: {
     flexBox: true,
