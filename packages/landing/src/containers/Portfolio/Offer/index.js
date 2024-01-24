@@ -36,10 +36,10 @@ const OfferSection = ({
     <Box {...sectionWrapper} as="section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Oferta" />
+          <Heading {...secTitle} content="Oto, co mogę zaoferować Twojej firmie:" />
           <Text
             {...secDescription}
-            content="To co mogę dla Ciebie zrobić"
+            content=" "
           />
         </Box>
 

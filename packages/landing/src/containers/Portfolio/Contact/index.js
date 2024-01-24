@@ -24,7 +24,7 @@ const ContactSection = ({
           <Heading {...secTitle} content="Kontakt" />
           <Text
             {...secDescription}
-            content="Lorem Ipsum"
+            content="Skontaktuj się z nami już dziś, aby dowiedzieć się więcej!"
           />
         </Box>
         <Box {...buttonWrapper}>
