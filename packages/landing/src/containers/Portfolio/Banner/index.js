@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'react-icons-kit';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
@@ -8,7 +7,6 @@ import NextImage from 'common/components/NextImage';
 import Container from 'common/components/UI/Container';
 import BannerWrapper from './banner.style';
 
-import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight';
 import LeafletImage from 'common/assets/image/portfolio/leaflet.png';
 
 const BannerSection = ({
@@ -26,18 +24,11 @@ const BannerSection = ({
     <BannerWrapper id="banner_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
-          <Box {...contentArea}>
-            <Heading content=" " {...greetingStyle} />
-            <Heading content="PutToPack" {...nameStyle} />
-            <Heading content="" {...designationStyle} />
-            <Box {...roleWrapper}>
-              <Icon
-                icon={cornerDownRight}
-                style={{ color: '#85b946' }}
-                size={22}
-              />
-              <Heading content="Wypełniam wymagania prawne dotyczące wprowadzania produktów na rynek, które dotyczą firm sprzedających produkty w opakowaniach ozdobionych własnym logo. " {...roleStyle} />
-            </Box>
+        <Box {...contentArea}>
+        <Heading content="Twój Partner w Ekologicznej Odpowiedzialności" {...greetingStyle} />
+            <Heading content="Put To Pack" {...nameStyle} />
+            <Heading content=" " {...designationStyle} />
+              <Heading content="Zminimalizuj obciążenia środowiskowe swojej firmy i zachowaj zgodność z przepisami. " {...roleStyle} />
             <Text
               content=" "
               {...aboutStyle}
