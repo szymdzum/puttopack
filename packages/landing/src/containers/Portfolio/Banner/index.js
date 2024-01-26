@@ -6,7 +6,7 @@ import NextImage from 'common/components/NextImage';
 import Container from 'common/components/UI/Container';
 import BannerWrapper from './banner.style';
 
-import LeafletImage from 'common/assets/image/portfolio/leaflet.png';
+//  import LeafletImage from 'common/assets/image/banner-bg.png';
 
 const BannerSection = ({
   row,
@@ -22,11 +22,11 @@ const BannerSection = ({
         <Box {...row}>
           <Box {...contentArea}>
             <Heading content="Put To Pack" {...nameStyle} />
-            <Heading content="Twój Partner w Ekologicznej Odpowiedzialności" {...greetingStyle} />
+            <Heading content="Profesjonalne Doradztwo dla Firm Wprowadzających Produkty w Opakowaniach" {...greetingStyle} />
           </Box>
-          <Box {...imageArea} className="image_area">
+          {/* <Box {...imageArea} className="image_area">
             <NextImage src={LeafletImage} alt="leaflet" />
-          </Box>
+          </Box> */}
         </Box>
       </Container>
     </BannerWrapper>
@@ -58,6 +58,7 @@ BannerSection.defaultProps = {
     flexWrap: 'wrap',
     justifyContent: 'center',
     flexDirection: 'column',
+    opacity: '1',
   },
   imageArea: {
     width: ['100%', '100%', '50%', '60%'],
@@ -73,6 +74,7 @@ BannerSection.defaultProps = {
   },
   nameStyle: {
     as: 'h1',
+    opacity: 1,
     color: '#000000',
     fontSize: ['38px', '38px', '44px', '60px', '80px'],
     fontWeight: '800',

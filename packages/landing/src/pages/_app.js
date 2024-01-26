@@ -7,6 +7,7 @@ import 'common/assets/css/react-slick.css';
 import 'common/assets/css/rc-collapse.css';
 import 'rc-collapse/assets/index.css';
 import 'common/assets/css/rc-drawer.css';
+import 'common/assets/css/banner-bg.css';
 
 export default function CustomApp({ Component, pageProps }) {
   return (
