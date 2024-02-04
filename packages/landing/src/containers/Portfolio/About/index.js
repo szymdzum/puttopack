@@ -11,6 +11,7 @@ const AboutSection = ({
   sectionWrapper,
   problemWrapper,
   secTitle,
+  secSubTitle,
   secDescription,
   processRow,
   processCol,
@@ -26,13 +27,28 @@ const AboutSection = ({
   return (
     <Box {...sectionWrapper} as="section" id="about_section">
       <Container noGutter mobileGutter width="1200px">
+        
+      <Box {...learningRow}>
+          <Box {...learningContentArea}>
+            <Heading content="Wprowadzasz do obrotu produkty w opakowaniach lub opakowania?" {...secTitle} />
+          </Box>
+          <Box {...learningContentArea}>
+          <Heading content="Produkty w Opakowaniach" {...secSubTitle} />
+          <Text content="Wprowadzasz do obrotu na rynek produkty własnej marki?" {...secDescription} />
+          <Heading content="Import Produktów w Opakowaniach" {...secSubTitle} />
+          <Text content="Importujesz produkty z zagranicy i wprowadzasz je do obrotu na terenie naszego kraju?" {...secDescription} />
+          <Heading content="Opakowania Szklane i Tworzywa Sztuczne" {...secSubTitle} />
+          <Text content="Twoje produkty są pakowane w szkło lub plastik?" {...secDescription} />
+          <Heading content="Tekturowe Pudełka i Wypełniacze" {...secSubTitle} />
+          <Text content="Czy korzystasz z usług firm zewnętrznych do pakowania Twoich produktów?" {...secDescription} />
+          <Heading content="Zewnętrzne Usługi Pakowania" {...secSubTitle} />
+          <Text content="Korzystasz z usług firm zewnętrznych do pakowania Twoich produktów?" {...secDescription} />
+          </Box>
+        </Box>
 
         <Box {...problemWrapper}>
-          <Heading content="Czy Twoja działalność spełnia wymogi ekologiczne?" {...secTitle}/>
-          <Text content="Opakowania Szklane i Tworzywa Sztuczne: Czy Twoje produkty są pakowane w szkło lub plastik?" {...secDescription} />
-          <Text content="Tekturowe Pudełka i Wypełniacze: Czy wysyłasz towary w kartonach, wykorzystując różne materiały wypełniające?" {...secDescription} />
-          <Text content="Zewnętrzne Usługi Pakowania: Czy korzystasz z usług firm zewnętrznych do pakowania Twoich produktów?" {...secDescription} />
-          <Text content="Jeśli na którekolwiek z tych pytań odpowiedziałeś/aś 'tak', to prawdopodobnie Twoja działalność podlega pod przepisy dotyczące sprawozdawczości ilości wprowadzanych produktów w opakowaniach. Zmiany w przepisach środowiskowych mogą być skomplikowane, ale **nie musisz tego robić sam/a. Jako ekspertka w tej dziedzinie, mogę Ci pomóc zrozumieć i spełnić te obowiązki**, minimalizując potencjalne ryzyko i zapewniając zgodność z obowiązującymi przepisami." {...secDescription} />
+          <Heading content="Jeśli na którekolwiek z tych pytań odpowiedziałeś/aś 'tak'" {...secTitle}/>
+          <Text content="Oznacza to, że jesteś odpowiedzialny/a za swoje opakowania w świetle ustawy o gospodarce opakowaniami i odpadami opakowaniowymi. Pamiętaj, że zgodnie z art. 17 tej ustawy, jako wprowadzający produkty w opakowaniach, masz kluczowe zadanie - zapewnienie odzysku, w tym recyklingu odpadów opakowaniowych." {...secDescription} />
         </Box>
 
         <Box {...learningRow}>
@@ -81,6 +97,7 @@ AboutSection.propTypes = {
   sectionWrapper: PropTypes.object,
   problemWrapper: PropTypes.object,
   secTitle: PropTypes.object,
+  secSubTitle: PropTypes.object,
   secDescription: PropTypes.object,
   processRow: PropTypes.object,
   processCol: PropTypes.object,
@@ -101,7 +118,8 @@ AboutSection.defaultProps = {
   },
   problemWrapper: {
     width: ['100%', '100%', '100%', '100%', '100%'],
-    mb: ['50px', '65px'],
+    pb: ['60px', '80px'],
+    pt: ['100px', '140px'],
     textAlign: 'left',
   },
   secTitle: {
@@ -111,12 +129,19 @@ AboutSection.defaultProps = {
     fontWeight: '500',
     mb: '8px',
   },
+  secSubTitle: {
+    as: 'h6',
+    color: '#000000',
+    fontSize: ['12px', '14px', '14px', '18px', '18px'],
+    fontWeight: '600',
+    mb: '8px',
+  },
   secDescription: {
     fontSize: ['15px', '16px'],
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',
-    mb: '0',
+    mb: '18px',
     textAlign: 'left',
   },
   processRow: {
