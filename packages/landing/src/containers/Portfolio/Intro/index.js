@@ -22,10 +22,10 @@ const IntroSection = ({
         </Box>
         <Box {...learningRow}>
           <Box {...learningContentArea}>
-
+          <Text content="Niezależnie od tego, czy są to produkty własnej marki, importowane produkty, czy towary pakowane w szkło, plastik, tekturę lub korzystasz z usług firm zewnętrznych do pakowania" {...secDescription} />
           </Box>
           <Box {...learningContentArea}>
-            <Text content="Niezależnie od tego, czy są to produkty własnej marki, importowane produkty, czy towary pakowane w szkło, plastik, tekturę lub korzystasz z usług firm zewnętrznych do pakowania" {...secDescription} />
+
           </Box>
         </Box>
 

@@ -28,6 +28,7 @@ const Portfolio = () => {
             href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800|Roboto:300,400,400i,500,700,900"
             rel="stylesheet"
           />
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lora:wght@500&family=Merriweather:ital,wght@1,300&family=Space+Mono&display=swap" rel="stylesheet" />
         </Head>
 
         <ResetCSS />

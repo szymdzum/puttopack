@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from 'common/components/Box';
 import Heading from 'common/components/Heading';
+import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import BannerWrapper from './banner.style';
 
@@ -17,8 +18,8 @@ const BannerSection = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...contentArea}>
-            <Heading content="Profesjonalne Doradztwo w Zakresie Obowiązków Ekologicznych." {...headerStyle} />
-            <Heading content="Kompleksowe wsparcie na każdym etapie - od diagnozy obowiązków, przez rejestrację w BDO, aż po optymalizację kosztów związanych z przepisami środowiskowymi." {...subheaderStyle} />
+            <Heading content="Profesjonalne doradztwo w zakresie obowiązków ekologicznych." {...headerStyle} />
+            <Text content="Kompleksowe wsparcie na każdym etapie - od diagnozy obowiązków, przez rejestrację w BDO, aż po optymalizację kosztów związanych z przepisami środowiskowymi." {...subheaderStyle} />
           </Box>
           <Box {...imageArea} className="image_area">
           </Box>
@@ -58,17 +59,19 @@ BannerSection.defaultProps = {
   headerStyle: {
     as: 'h1',
     opacity: 1,
-    color: '#000000',
+    color: '#232115',
     fontSize: ['19px', '19px', '22px', '30px', '40px'],
-    fontWeight: '800',
-    mb: '6px',
+    fontWeight: '600',
+    mb: '24px',
+    lineHeight: '1.2',
   },  
   subheaderStyle: {
-    as: 'h3',
-    color: '#000000',
-    fontSize: ['18px', '18px', '18px', '20px', '30px'],
-    fontWeight: '500',
+    color: '#232115',
+    fontSize: ['18px', '18px', '18px', '20px', '20px'],
+    fontWeight: '400',
     mb: '8px',
+    opacity: '0.6',
+    lineHeight: '1.6',
   }
 };
 

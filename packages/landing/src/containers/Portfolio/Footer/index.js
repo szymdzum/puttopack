@@ -45,15 +45,7 @@ const Footer = ({
 
         <Box {...row}>
           <Box {...col}>
-            <Text
-              as="span"
-              content="© 2018 All rights reserved. "
-              {...copyrightStyle}
-            />
-            <Link href="#">
-              {' '}
-              <Text as="span" content=" RedQ, Inc." {...copyrightStyle} />
-            </Link>
+
           </Box>
           <Box {...col} {...flexBox}>
 
@@ -69,16 +61,17 @@ const Footer = ({
             />
             <Icon icon={heart} size={14} className="heart_sign" />
           </Box>
-          <Box {...col} {...flexBox}>
-            <FooterNav>
-              {FOOTER_MENU.map((item, index) => (
-                <FooterNavItem key={`footer-nav-item-${index}`}>
-                  <Link href={item.path || '#'}>
-                    {item.label}
-                  </Link>
-                </FooterNavItem>
-              ))}
-            </FooterNav>
+          <Box {...col} 
+          {...flexBox}>
+              <Text
+                as="span"
+                content="© 2018 All rights reserved. "
+                {...copyrightStyle}
+              />
+              <Link href="#">
+                {' '}
+                <Text as="span" content=" RedQ, Inc." {...copyrightStyle} />
+              </Link>
           </Box>
         </Box>
       </Container>

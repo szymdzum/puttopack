@@ -4,7 +4,7 @@ import Line from 'common/assets/image/portfolio/dotted-line.png';
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   h1,
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top: 0;
   }
 
