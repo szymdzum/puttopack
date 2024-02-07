@@ -9,6 +9,7 @@ import { GlobalStyle, ContentWrapper } from 'containers/Portfolio/portfolio.styl
 
 import Navbar from 'containers/Portfolio/Navbar';
 import BannerSection from 'containers/Portfolio/Banner';
+import IntroSection from 'containers/Portfolio/Intro';
 import OfferSection from 'containers/Portfolio/Offer';
 import AboutSection from 'containers/Portfolio/About';
 import ContactSection from 'containers/Portfolio/Contact';
@@ -39,6 +40,7 @@ const Portfolio = () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
+          <IntroSection />
           <AboutSection />
           <OfferSection />
           <ContactSection />
