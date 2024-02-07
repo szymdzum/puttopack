@@ -21,10 +21,10 @@ const ContactSection = ({
     <Box {...sectionWrapper} as="section" id="contact_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Kontakt" />
+          <Heading {...secTitle} content="Zaangażowanie, doświadczenie i indywidualne podejście do każdego klienta to filary, na których buduję moją ofertę." />
           <Text
             {...secDescription}
-            content="Skontaktuj się z nami już dziś, aby dowiedzieć się więcej!"
+            content="Skontaktuj się ze mną, abyśmy wspólnie mogli pracować nad ekologiczną przyszłością Twojej marki."
           />
         </Box>
         <Box {...buttonWrapper}>

@@ -45,11 +45,6 @@ const Footer = ({
 
         <Box {...row}>
           <Box {...col}>
-            <SocialProfile
-              className="footer_social"
-              items={SOCIAL_PROFILES}
-              iconSize={40}
-            />
             <Text
               as="span"
               content="© 2018 All rights reserved. "

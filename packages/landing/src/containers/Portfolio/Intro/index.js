@@ -18,14 +18,23 @@ const IntroSection = ({
     <Box {...sectionWrapper} as="section" id="about_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...problemWrapper}>
-          <Heading content="Zapewniam kompleksowe wsparcie na każdym etapie - od diagnozy obowiązków, przez rejestrację w BDO, aż po optymalizację kosztów związanych z przepisami środowiskowymi." {...sectionTitle}/>
+          <Heading content="Wprowadzasz do obrotu produkty w opakowaniach lub opakowania?" {...sectionTitle}/>
         </Box>
         <Box {...learningRow}>
           <Box {...learningContentArea}>
-            <Heading content="Wprowadzasz do obrotu produkty w opakowaniach lub opakowania?" {...sectionTitle} />
-            <Text content="Czy twoje produkty są wprowadzane do obrotu w opakowaniach? Niezależnie od tego, czy są to produkty własnej marki, importowane produkty, czy towary pakowane w szkło, plastik, tekturę lub korzystasz z usług firm zewnętrznych do pakowania – każdy aspekt podlega regulacjom dotyczącym recyklingu i zrównoważonego rozwoju." {...secDescription} />
+
           </Box>
-          <Box {...learningContentArea}></Box>
+          <Box {...learningContentArea}>
+            <Text content="Niezależnie od tego, czy są to produkty własnej marki, importowane produkty, czy towary pakowane w szkło, plastik, tekturę lub korzystasz z usług firm zewnętrznych do pakowania" {...secDescription} />
+          </Box>
+        </Box>
+
+        <Box {...learningRow}>
+          <Box {...learningContentArea}>
+            <Text content="Jako przedsiębiorca wprowadzający produkty w opakowaniach, podlegasz regulacjom dotyczącym recyklingu i zrównoważonego rozwoju." {...secDescription} />
+          </Box>
+          <Box {...learningContentArea}>
+          </Box>
         </Box>
       </Container>
     </Box>
@@ -59,6 +68,7 @@ IntroSection.defaultProps = {
     fontSize: ['20px', '20px', '22px', '24px', '34px'],
     fontWeight: '400',
     mb: '8px',
+    textAlign: 'center',
   },
   secSubTitle: {
     as: 'h6',
@@ -68,7 +78,7 @@ IntroSection.defaultProps = {
     mb: '8px',
   },
   secDescription: {
-    fontSize: ['14px', '15px'],
+    fontSize: ['16px', '22px'],
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',

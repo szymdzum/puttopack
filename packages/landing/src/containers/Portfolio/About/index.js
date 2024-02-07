@@ -29,7 +29,7 @@ const AboutSection = ({
       <Container noGutter mobileGutter width="1200px">
 
         <Box {...problemWrapper}>
-          <Heading content="Jako przedsiębiorca wprowadzający produkty w opakowaniach, podlegasz regulacjom dotyczącym recyklingu i zrównoważonego rozwoju. Stoicie przed zawiłościami przepisów dotyczących opakowań? Oferuję profesjonalne doradztwo, które uprości zadanie i wyjaśni wymagane standardy." {...sectionTitle}/>
+          <Heading content="Stoicie przed zawiłościami przepisów dotyczących opakowań? Oferuję profesjonalne doradztwo, które uprości zadanie i wyjaśni wymagane standardy." {...sectionTitle}/>
         </Box>
 
         
@@ -38,7 +38,8 @@ const AboutSection = ({
 
           </Box>
           <Box {...learningContentArea}>
-            <Heading content="Cześć, jestem Zuzia! Jako absolwentka Politechniki Warszawskiej, moja pasja i wykształcenie skupiają się na ochronie naszego środowiska. Przez lata praktyki, współpracując z wieloma przedsiębiorstwami, rozwinęłam praktyczne podejście do zarządzania obowiązkami środowiskowymi" {...sectionTitle}/>
+            <Text content="Cześć, jestem Zuzia! Jako absolwentka Politechniki Warszawskiej, moja pasja i wykształcenie skupiają się na ochronie naszego środowiska. Przez lata praktyki, współpracując z wieloma przedsiębiorstwami, rozwinęłam praktyczne podejście do zarządzania obowiązkami środowiskowymi"
+            {...secDescription}/>
           </Box>
         </Box>
 
@@ -46,7 +47,7 @@ const AboutSection = ({
 
         <Box {...sectionWrapper}>
           <Box {...sectionTitleWrapper}>
-            <Heading {...sectionTitle} content="Specjalizuję się w raportowaniu" />
+            <Heading {...sectionTitle} content="Moje specjalizacje" />
           </Box>
 
           <Box {...processRow}>
@@ -110,6 +111,7 @@ AboutSection.defaultProps = {
     fontSize: ['18px', '18px', '18px', '20px', '30px'],
     fontWeight: '400',
     mb: '8px',
+    textAlign: 'center',
   },
   secSubTitle: {
     as: 'h6',
@@ -119,7 +121,7 @@ AboutSection.defaultProps = {
     mb: '8px',
   },
   secDescription: {
-    fontSize: ['15px', '16px'],
+    fontSize: ['16px', '22px'],
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',

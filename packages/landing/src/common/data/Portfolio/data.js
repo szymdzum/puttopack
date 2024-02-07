@@ -61,21 +61,21 @@ export const MENU_ITEMS = [
 export const PROCESS_STEPS = [
   {
     image: Step1,
-    title: ' ',
+    title: 'Raportowanie',
     description:
-      'Raportowanie dotyczące produktów w opakowaniach (w tym z własnym logo),',
+      'Produkty w opakowaniach z własnym brandingiem.',
   },
   {
     image: Step2,
-    title: ' ',
+    title: 'Recykling',
     description:
-      'Zagadnienia związane ze sprzętem elektrycznym, elektronicznym, baterie i akumulatory',
+      'Elektronika, baterie oraz akumulatory.',
   },
   {
     image: Step3,
-    title: ' ',
+    title: 'Zarządzanie',
     description:
-      'Zarządzanie produktami specjalistycznymi, takimi jak oleje, opony i preparaty smarowe.',
+      'Zużyte oleje, opony, preparaty smarowe i inne specyficzne odpady.',
   },
 
 ];
@@ -83,28 +83,28 @@ export const PROCESS_STEPS = [
 
 export const SKILLS = [
   {
-    title: 'Wsparcie w identyfikacji obowiązków',
+    title: 'Obowiązki prawne',
     description:
-      ' Pomogę Ci zrozumieć, jakie wymagania dotyczące opakowań, sprzętu elektrycznego i elektronicznego, a także baterii i akumulatorów, mają zastosowanie do Twojej działalności.',
+      'Zidentyfikuję wszelkie wymogi dotyczące opakowań, sprzętu elektronicznego, baterii i akumulatorów, które dotyczą Twojej firmy.',
     icon: SkillIcon1,
   },
   {
-    title: 'Przejęcie obowiązków sprawozdawczych:',
+    title: 'Zarządzanie rejestracją',
     description:
-      'Zadbam o coroczną sprawozdawczość związaną z wprowadzaniem produktów na rynek, zapewniając zgodność z wymogami urzędów.',
-    icon: SkillIcon3,
+      'Zajmę się całością procesu rejestracji w bazie danych o produktach i opakowaniach oraz o gospodarce odpadami (BDO).',
+    icon: SkillIcon2,
   },
   {
-    title: 'Pomoc w rejestracji:',
+    title: 'Obsługa sprawozdawcza',
     description:
-      'Zajmę się procesem rejestracji Twojej firmy w bazie danych o produktach i opakowaniach oraz o gospodarce odpadami (BDO).',
-    icon: SkillIcon2,
+      'Zadbam o coroczną sprawozdawczość związaną z wprowadzaniem produktów na rynek, zapewniając zgodność z wymogami.',
+    icon: SkillIcon3,
   },
 
   {
-    title: 'Optymalizacja kosztów:',
+    title: 'Optymalizacja kosztów',
     description:
-      'Doradzę, jak obniżyć koszty związane z wprowadzaniem opakowań, sprzętu, czy baterii, przy jednoczesnym zachowaniu zgodności z przepisami.',
+      'Przygotuję strategię pozwalającą zminimalizować wydatki przy jednoczesnej pełnej zgodności z obowiązującym prawem.',
     icon: SkillIcon4,
   },
 ];

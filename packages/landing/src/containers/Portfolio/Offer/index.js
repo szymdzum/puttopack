@@ -27,7 +27,7 @@ const OfferSection = ({
     <Box {...sectionWrapper} as="section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading  content="Oto, co mogę zaoferować Twojej firmie:" {...secTitle} />
+          <Heading  content="Moje usługi" {...secTitle} />
         </Box>
 
         <Box {...row}>
@@ -92,6 +92,7 @@ OfferSection.defaultProps = {
     fontSize: ['18px', '18px', '18px', '20px', '30px'],
     fontWeight: '500',
     mb: '8px',
+    textAlign: 'center',
   },
   skillTitle: {
     fontSize: ['16px', '18px', '18px', '20px', '20px'],

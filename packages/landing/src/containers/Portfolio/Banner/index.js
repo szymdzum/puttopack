@@ -18,7 +18,7 @@ const BannerSection = ({
         <Box {...row}>
           <Box {...contentArea}>
             <Heading content="Profesjonalne Doradztwo w Zakresie Obowiązków Ekologicznych." {...headerStyle} />
-            <Heading content="W obliczu coraz bardziej wymagających regulacji środowiskowych związanych z gospodarką opakowaniami i odpadami, mogę zaoferować doradztwo, które będzie cennym wsparciem dla Twojej firmy." {...subheaderStyle} />
+            <Heading content="Kompleksowe wsparcie na każdym etapie - od diagnozy obowiązków, przez rejestrację w BDO, aż po optymalizację kosztów związanych z przepisami środowiskowymi." {...subheaderStyle} />
           </Box>
           <Box {...imageArea} className="image_area">
           </Box>
