@@ -7,7 +7,6 @@ const BannerWrapper = styled.section`
   align-items: center;
   padding-top: 80px;
   display: flex;
-  align-items: flex-end;
   @media (min-width: 991px) {
     min-height: 100vh;
   }

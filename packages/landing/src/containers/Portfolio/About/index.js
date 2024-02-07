@@ -6,12 +6,13 @@ import Heading from 'common/components/Heading';
 import Container from 'common/components/UI/Container';
 import NextImage from 'common/components/NextImage';
 import ProcessItem from './process.style';
-import {  PROCESS_STEPS } from 'common/data/Portfolio/data';
+import { PROCESS_STEPS } from 'common/data/Portfolio/data';
+
 const AboutSection = ({
   sectionWrapper,
   problemWrapper,
-  secTitleWrapper,
-  secTitle,
+  sectionTitle,
+  secSubTitle,
   secDescription,
   processRow,
   processCol,
@@ -19,89 +20,54 @@ const AboutSection = ({
   processTitleStyle,
   processDescriptionStyle,
   learningRow,
+  sectionTitleWrapper,
   learningContentArea,
-  learningTitle,
-  learningSubTitle,
-  learningDescription,
+
 }) => {
   return (
     <Box {...sectionWrapper} as="section" id="about_section">
       <Container noGutter mobileGutter width="1200px">
+
         <Box {...problemWrapper}>
-          <Heading {...secTitle} content="Sprawdź, Czy Twoja Działalność Spełnia Wymogi Ekologiczne:" />
-          <Text
-            {...secDescription}
-            content="**Opakowania Szklane i Tworzywa Sztuczne:** Czy Twoje produkty są pakowane w szkło lub plastik? "
-          />
-          <Text
-            {...secDescription}
-            content="**Tekturowe Pudełka i Wypełniacze:** Czy wysyłasz towary w kartonach, wykorzystując różne materiały wypełniające?"
-          />
-          <Text
-            {...secDescription}
-            content="- **Zewnętrzne Usługi Pakowania:** Czy korzystasz z usług firm zewnętrznych do pakowania Twoich produktów?"
-          />
-
-          <Text
-            {...secDescription}
-            content="Jeśli na którekolwiek z tych pytań odpowiedziałeś/aś 'tak', to prawdopodobnie Twoja działalność podlega pod przepisy dotyczące sprawozdawczości ilości wprowadzanych produktów w opakowaniach. Zmiany w przepisach środowiskowych mogą być skomplikowane, ale **nie musisz tego robić sam/a. Jako ekspertka w tej dziedzinie, mogę Ci pomóc zrozumieć i spełnić te obowiązki**, minimalizując potencjalne ryzyko i zapewniając zgodność z obowiązującymi przepisami."
-          />
-
-
-
+          <Heading content="Jako przedsiębiorca wprowadzający produkty w opakowaniach, podlegasz regulacjom dotyczącym recyklingu i zrównoważonego rozwoju. Stoicie przed zawiłościami przepisów dotyczących opakowań? Oferuję profesjonalne doradztwo, które uprości zadanie i wyjaśni wymagane standardy." {...sectionTitle}/>
         </Box>
 
+        
         <Box {...learningRow}>
           <Box {...learningContentArea}>
-            <Heading
-              content="Cześć, nazywam się Zuza."
-              {...learningTitle}
-            />
-            <Text
-              content="Jestem ekspertką w dziedzinie gospodarki odpadami."
-              {...learningSubTitle}
-            />
-            <Text
-              {...learningDescription}
-              content="Moją misją jest wspieranie przedsiębiorstw w Polsce i za granicą w odpowiedzialnym zarządzaniu odpadami, szczególnie tymi pochodzącymi z opakowań."
-            />
-            <Text
-              {...learningDescription}
-              content="Z wykształcenia jestem inżynierką ochrony środowiska, a moje doświadczenie i wiedza techniczna pozwalają mi na identyfikację i rozwiązywanie specyficznych problemów związanych z obowiązkami środowiskowymi firm.
-              "
-            />
+
           </Box>
           <Box {...learningContentArea}>
+            <Heading content="Cześć, jestem Zuzia! Jako absolwentka Politechniki Warszawskiej, moja pasja i wykształcenie skupiają się na ochronie naszego środowiska. Przez lata praktyki, współpracując z wieloma przedsiębiorstwami, rozwinęłam praktyczne podejście do zarządzania obowiązkami środowiskowymi" {...sectionTitle}/>
           </Box>
         </Box>
 
-        </Container>
-        <Container noGutter mobileGutter width="1200px">
-        <Box {...secTitleWrapper}>
-          <Heading
-            {...secTitle}
-            content="Specjalizuję się w raportowaniu:"
-          />
-        </Box>
 
-        <Box {...processRow}>
-          {PROCESS_STEPS.map((item, index) => (
-            <Box
-              {...processCol}
-              key={`process-item-${index}`}
-              className="process_item_col"
-            >
-              <ProcessItem className="process_item">
-                <NextImage
-                  src={item.image}
-                  alt={`process-image-${index + 1}`}
-                  {...processImageStyle}
-                />
-                <Heading as="h3" content={item.title} {...processTitleStyle} />
-                <Text content={item.description} {...processDescriptionStyle} />
-              </ProcessItem>
-            </Box>
-          ))}
+
+        <Box {...sectionWrapper}>
+          <Box {...sectionTitleWrapper}>
+            <Heading {...sectionTitle} content="Specjalizuję się w raportowaniu" />
+          </Box>
+
+          <Box {...processRow}>
+            {PROCESS_STEPS.map((item, index) => (
+              <Box
+                {...processCol}
+                key={`process-item-${index}`}
+                className="process_item_col"
+              >
+                <ProcessItem className="process_item">
+                  <NextImage
+                    src={item.image}
+                    alt={`process-image-${index + 1}`}
+                    {...processImageStyle}
+                  />
+                  <Heading as="h3" content={item.title} {...processTitleStyle} />
+                  <Text content={item.description} {...processDescriptionStyle} />
+                </ProcessItem>
+              </Box>
+            ))}
+          </Box>
         </Box>
 
       </Container>
@@ -112,17 +78,17 @@ const AboutSection = ({
 AboutSection.propTypes = {
   sectionWrapper: PropTypes.object,
   problemWrapper: PropTypes.object,
-  secTitleWrapper: PropTypes.object,
-  secTitle: PropTypes.object,
+  sectionTitle: PropTypes.object,
+  secSubTitle: PropTypes.object,
   secDescription: PropTypes.object,
   processRow: PropTypes.object,
   processCol: PropTypes.object,
   processImageStyle: PropTypes.object,
   processTitleStyle: PropTypes.object,
   processDescriptionStyle: PropTypes.object,
+  sectionTitleWrapper: PropTypes.object,
   learningRow: PropTypes.object,
   learningContentArea: PropTypes.object,
-  learningTitle: PropTypes.object,
   learningSubTitle: PropTypes.object,
   learningDescription: PropTypes.object,
 };
@@ -133,27 +99,32 @@ AboutSection.defaultProps = {
     pb: ['10px', '40px', '30px', '50px', '50px'],
   },
   problemWrapper: {
-    width: ['100%', '100%', '60%', '50%', '50%'],
-    mb: ['50px', '65px']
+    width: ['100%', '100%', '100%', '100%', '100%'],
+    pb: ['60px', '80px'],
+    pt: ['100px', '140px'],
+    textAlign: 'center',
   },
-  secTitleWrapper: {
-    mb: ['60px', '105px'],
-    textAlign: 'left',
+  sectionTitle: {
+    as: 'h3',
+    color: '#000000',
+    fontSize: ['18px', '18px', '18px', '20px', '30px'],
+    fontWeight: '400',
+    mb: '8px',
   },
-  secTitle: {
-    fontSize: ['22px', '26px', '26px', '30px', '30px'],
-    fontWeight: '700',
-    color: '#302b4e',
-    lineHeight: '1.34',
-    mb: ['15px', '18px', '18px', '20px', '20px'],
+  secSubTitle: {
+    as: 'h6',
+    color: '#000000',
+    fontSize: ['12px', '14px', '14px', '18px', '18px'],
+    fontWeight: '600',
+    mb: '8px',
   },
   secDescription: {
     fontSize: ['15px', '16px'],
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',
-    mb: '0',
-    textAlign: 'center',
+    mb: '18px',
+    textAlign: 'left',
   },
   processRow: {
     flexBox: true,
@@ -185,6 +156,12 @@ AboutSection.defaultProps = {
     color: '#43414e',
     textAlign: 'center',
     lineHeight: '1.5',
+  },
+  sectionTitleWrapper: {
+    mb: ['60px', '105px'],
+    width: ['100%', '100%', '100%', '100%', '100%'],
+    mb: ['50px', '65px'],
+    textAlign: 'left',
   },
   learningRow: {
     flexBox: true,

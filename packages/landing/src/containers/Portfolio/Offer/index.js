@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Line } from 'rc-progress';
-import { Icon } from 'react-icons-kit';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
@@ -11,36 +9,25 @@ import Container from 'common/components/UI/Container';
 import {
   SkillItem,
   SkillDetails,
-  SkillProgress,
-  SuccessRate,
-  ProgressBar,
   SkillIcon,
   SkillAbout,
 } from './skill.style';
 import { SKILLS } from 'common/data/Portfolio/data';
-import { ic_thumb_up } from 'react-icons-kit/md/ic_thumb_up';
 
 const OfferSection = ({
   sectionWrapper,
   secTitleWrapper,
   secTitle,
-  secDescription,
   row,
   col,
   skillTitle,
   skillDescription,
-  skillSuccessRate,
-  successRateText,
 }) => {
   return (
     <Box {...sectionWrapper} as="section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Oto, co mogę zaoferować Twojej firmie:" />
-          <Text
-            {...secDescription}
-            content=" "
-          />
+          <Heading  content="Oto, co mogę zaoferować Twojej firmie:" {...secTitle} />
         </Box>
 
         <Box {...row}>
@@ -69,47 +56,16 @@ const OfferSection = ({
 };
 
 OfferSection.propTypes = {
+  row: PropTypes.object,
+  col: PropTypes.object,
   sectionWrapper: PropTypes.object,
   secTitleWrapper: PropTypes.object,
   secTitle: PropTypes.object,
-  secDescription: PropTypes.object,
-  row: PropTypes.object,
-  col: PropTypes.object,
   skillTitle: PropTypes.object,
   skillDescription: PropTypes.object,
-  skillSuccessRate: PropTypes.object,
-  successRateText: PropTypes.object,
 };
 
 OfferSection.defaultProps = {
-  sectionWrapper: {
-    pt: ['60px', '80px', '100px', '110px', '140px'],
-    pb: ['150px', '160px', '160px', '180px', '210px'],
-    bg: '#f9f9f9',
-  },
-  secTitleWrapper: {
-    mb: ['65px', '65px', '80px', '90px', '105px'],
-  },
-  secTitle: {
-    fontSize: ['22px', '26px', '26px', '30px', '30px'],
-    fontWeight: '700',
-    color: '#302b4e',
-    lineHeight: '1.34',
-    mb: ['15px', '18px', '18px', '20px', '20px'],
-    textAlign: 'center',
-  },
-  secDescription: {
-    fontSize: ['15px', '16px'],
-    fontWeight: '400',
-    color: '#43414e',
-    lineHeight: '1.5',
-    mb: '0',
-    textAlign: 'center',
-    width: '600px',
-    maxWidth: '100%',
-    ml: 'auto',
-    mr: 'auto',
-  },
   row: {
     flexBox: true,
     flexWrap: 'wrap',
@@ -121,6 +77,21 @@ OfferSection.defaultProps = {
     pl: ['15px', '15px', '15px', '25px', '25px'],
     pr: ['15px', '15px', '15px', '25px', '25px'],
     mb: ['30px', '30px', '30px', '50px', '50px'],
+  },
+  sectionWrapper: {
+    pt: ['60px', '80px', '100px', '110px', '140px'],
+    pb: ['60px', '80px', '80px', '90px', '100px'],
+    bg: '#f9f9f9',
+  },
+  secTitleWrapper: {
+    mb: ['65px', '65px', '80px', '90px', '105px'],
+  },
+  secTitle: {
+    as: 'h3',
+    color: '#000000',
+    fontSize: ['18px', '18px', '18px', '20px', '30px'],
+    fontWeight: '500',
+    mb: '8px',
   },
   skillTitle: {
     fontSize: ['16px', '18px', '18px', '20px', '20px'],
@@ -134,18 +105,7 @@ OfferSection.defaultProps = {
     color: '#43414e',
     lineHeight: '1.5',
     mb: '0',
-  },
-  skillSuccessRate: {
-    fontSize: ['15px', '15px', '14px', '15px', '16px'],
-    fontWeight: '400',
-    color: '#302b4e',
-    lineHeight: '1.5',
-    mb: '0',
-  },
-  successRateText: {
-    ml: '.3em',
-    display: ['none', 'none', 'none', 'none', 'inline-block'],
-  },
+  }
 };
 
 export default OfferSection;
