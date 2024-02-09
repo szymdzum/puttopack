@@ -18,7 +18,7 @@ const BannerSection = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...contentArea}>
-            <Heading content="Profesjonalne doradztwo w zakresie obowiązków ekologicznych." {...headerStyle} />
+            <Heading content="Profesjonalne doradztwo w zakresie raportowania środowiskowego" {...headerStyle} />
             <Text content="Kompleksowe wsparcie na każdym etapie - od diagnozy obowiązków, przez rejestrację w BDO, aż po optymalizację kosztów związanych z przepisami środowiskowymi." {...subheaderStyle} />
           </Box>
           <Box {...imageArea} className="image_area">

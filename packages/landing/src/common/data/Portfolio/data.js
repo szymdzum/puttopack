@@ -4,9 +4,9 @@ import { socialDribbbleOutline } from 'react-icons-kit/ionicons/socialDribbbleOu
 import { socialGithub } from 'react-icons-kit/ionicons/socialGithub';
 import { socialGoogleplusOutline } from 'react-icons-kit/ionicons/socialGoogleplusOutline';
 
-import Step1 from '../../assets/image/portfolio/step-1.png';
-import Step2 from '../../assets/image/portfolio/step-2.png';
-import Step3 from '../../assets/image/portfolio/step-3.png';
+import box from '../../assets/image/portfolio/box.svg';
+import battery from '../../assets/image/portfolio/battery.svg';
+import barrel from '../../assets/image/portfolio/barrel.svg';
 
 import SkillIcon1 from '../../assets/image/portfolio/skill-1.svg';
 import SkillIcon2 from '../../assets/image/portfolio/skill-2.svg';
@@ -60,22 +60,22 @@ export const MENU_ITEMS = [
 
 export const PROCESS_STEPS = [
   {
-    image: Step1,
-    title: 'Raportowanie',
+    image: box,
+    title: 'Opakowania',
     description:
-      'Produkty w opakowaniach z własnym brandingiem.',
+      'Opakowania i Produkty Opakowane z Własnym Brandingiem',
   },
   {
-    image: Step2,
-    title: 'Recykling',
+    image: battery,
+    title: 'Elektronika',
     description:
-      'Elektronika, baterie oraz akumulatory.',
+      'Urządzenia Elektryczne i Elektroniczne, Baterie oraz Akumulatory',
   },
   {
-    image: Step3,
-    title: 'Zarządzanie',
+    image: barrel,
+    title: 'Specjalistyczne',
     description:
-      'Zużyte oleje, opony, preparaty smarowe i inne specyficzne odpady.',
+      'Zużyte Oleje, Opony, Środki Smarowe i Specjalistyczne ',
   },
 
 ];

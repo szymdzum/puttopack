@@ -41,8 +41,9 @@ const Portfolio = () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <IntroSection />
           <AboutSection />
+          <IntroSection />
+
           <OfferSection />
           <ContactSection />
           <Footer />

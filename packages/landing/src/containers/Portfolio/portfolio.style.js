@@ -281,25 +281,7 @@ export const ContentWrapper = styled.div`
     &:nth-child(2),
     &:nth-child(3) {
       .process_item {
-        &:before {
-          content: '';
-          background-image: url(${Line?.src});
-          width: 165px;
-          height: 35px;
-          display: block;
-          background-repeat: no-repeat;
-          background-position: center;
-          position: absolute;
-          left: -165px;
-          top: 20px;
-          @media (max-width: 990px) {
-            width: 100px;
-            left: -80px;
-          }
-          @media (max-width: 767px) {
-            display: none;
-          }
-        }
+
       }
     }
     &:nth-child(3) {
